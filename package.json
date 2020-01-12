@@ -1,0 +1,78 @@
+{
+  "name": "@taimos/cdk-construct-alexa-skill",
+  "version": "1.0.0",
+  "description": "An AWS CDK Construct that creates an Alexa Skill backend",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist doc 'lib/**/*.js' 'lib/**/*.d.ts' 'tst/**/*.js' 'tst/**/*.d.ts'",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "doc": "typedoc --excludeExternals --mode file --out doc lib/",
+    "build": "jsii",
+    "watch": "jsii -w",
+    "build+test": "npm-run-all clean build test",
+    "package": "npm-run-all clean build test doc && jsii-pacmak"
+  },
+  "jsii": {
+    "outdir": "dist",
+    "targets": {
+      "python": {
+        "distName": "taimos.cdk-construct-alexa-skill",
+        "module": "taimos.cdk_construct_alexa_skill"
+      },
+      "java": {
+        "package": "de.taimos.cdk.construct.alexa.skill",
+        "maven": {
+          "groupId": "de.taimos.cdk.construct",
+          "artifactId": "alexa-skill"
+        }
+      }
+    }
+  },
+  "keywords": [
+    "cdk",
+    "aws-cdk",
+    "construct",
+    ""
+  ],
+  "author": {
+    "email": "thorsten.hoeger@taimos.de",
+    "name": "Thorsten Hoeger",
+    "url": "https://www.taimos.de"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taimos/cdk-construct-alexa-skill"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.20.0",
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.6",
+    "concurrently": "^5.0.2",
+    "npm-run-all": "^4.1.5",
+    "jest": "^24.9.0",
+    "rimraf": "^3.0.0",
+    "jsii": "^0.21.1",
+    "jsii-pacmak": "^0.21.1",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.1.0",
+    "typedoc": "^0.15.5",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "@aws-cdk/core": "1.20.0",
+    "@aws-cdk/aws-dynamodb": "1.20.0",
+    "@aws-cdk/aws-iam": "1.20.0",
+    "@aws-cdk/aws-lambda": "1.20.0",
+    "@aws-cdk/aws-s3": "1.20.0"
+  },
+  "peerDependencies": {
+    "@aws-cdk/core": "1.20.0",
+    "@aws-cdk/aws-dynamodb": "1.20.0",
+    "@aws-cdk/aws-iam": "1.20.0",
+    "@aws-cdk/aws-lambda": "1.20.0",
+    "@aws-cdk/aws-s3": "1.20.0"
+  }
+}

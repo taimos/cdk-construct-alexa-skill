@@ -1,0 +1,9 @@
+tsconfig.json
+node_modules/
+.idea/
+.vscode/
+dist/
+.jsii
+**/*.js
+**/*.d.ts
+!jest.config.js
