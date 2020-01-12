@@ -1,18 +1,18 @@
-[![npm version](https://badge.fury.io/js/taimos-cdk-constructs.svg)](https://badge.fury.io/js/taimos-cdk-constructs)
-[![PyPI version](https://badge.fury.io/py/taimos-cdk.svg)](https://badge.fury.io/py/taimos-cdk)
+[![npm version](https://badge.fury.io/js/%40taimos%2Fcdk-construct-hosting.svg)](https://badge.fury.io/js/%40taimos%2Fcdk-construct-hosting)
+[![PyPI version](https://badge.fury.io/py/taimos.cdk-construct-hosting.svg)](https://badge.fury.io/py/taimos.cdk-construct-hosting)
 
-# A CDK L3 Construct for web hosting
+
+# A CDK L3 Construct for an Alexa Skill backend
 
 ## Installation
 
 You can install the library into your project using npm or pip.
 
 ```bash
-npm install @taimos/cdk-construct-hosting
+npm install @taimos/cdk-construct-alexa-skill
 
-pip3 install taimos-cdk
+pip3 install taimos.cdk-construct-alexa-skill
 ```
-
 
 # Contributing
 
