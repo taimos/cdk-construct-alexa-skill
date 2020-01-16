@@ -40,6 +40,9 @@
     "name": "Thorsten Hoeger",
     "url": "https://www.taimos.de"
   },
+  "awscdkio": { 
+    "twitter": "hoegertn" 
+  },
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
