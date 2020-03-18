@@ -1,5 +1,5 @@
-[![npm version](https://badge.fury.io/js/%40taimos%2Fcdk-construct-hosting.svg)](https://badge.fury.io/js/%40taimos%2Fcdk-construct-hosting)
-[![PyPI version](https://badge.fury.io/py/taimos.cdk-construct-hosting.svg)](https://badge.fury.io/py/taimos.cdk-construct-hosting)
+[![npm version](https://badge.fury.io/js/%40taimos%2Fcdk-construct-alexa-skill.svg)](https://badge.fury.io/js/%40taimos%2Fcdk-construct-alexa-skill)
+[![PyPI version](https://badge.fury.io/py/taimos.cdk-construct-alexa-skill.svg)](https://badge.fury.io/py/taimos.cdk-construct-alexa-skill)
 
 
 # A CDK L3 Construct for an Alexa Skill backend
