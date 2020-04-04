@@ -1,6 +1,6 @@
 {
   "name": "@taimos/cdk-construct-alexa-skill",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "An AWS CDK Construct that creates an Alexa Skill backend",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
