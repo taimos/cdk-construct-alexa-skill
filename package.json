@@ -11,7 +11,9 @@
     "doc": "typedoc --excludeExternals --mode file --out doc lib/",
     "build": "npm-run-all clean build:jsii test",
     "build:jsii": "jsii",
-    "package": "npm-run-all build doc && jsii-pacmak"
+    "package": "npm-run-all build doc && jsii-pacmak",
+    "changelog": "conventional-changelog -i CHANGELOG.md -s -p angular",
+    "version": "npm run changelog && git add CHANGELOG.md"
   },
   "jsii": {
     "outdir": "dist",
@@ -19,13 +21,6 @@
       "python": {
         "distName": "taimos.cdk-construct-alexa-skill",
         "module": "taimos.cdk_construct_alexa_skill"
-      },
-      "java": {
-        "package": "de.taimos.cdk.construct.alexa.skill",
-        "maven": {
-          "groupId": "de.taimos.cdk.construct",
-          "artifactId": "alexa-skill"
-        }
       }
     }
   },
